@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00BCD4"
+    android:backgroundTint="#00BCD4"
+    android:orientation="vertical"
+    tools:context=".Linear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="679dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/opcion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opción 1" />
+
+            <RadioButton
+                android:id="@+id/opcion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opción 2" />
+
+            <RadioButton
+                android:id="@+id/opcion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opción 3" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#673AB7"
+        android:backgroundTint="#673AB7">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#673AB7"
+            android:onClick="toast1"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#673AB7"
+            android:onClick="toast2"
+            app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#673AB7"
+            android:onClick="toast3"
+            app:srcCompat="@android:drawable/ic_lock_lock" />
+
+    </LinearLayout>
+</LinearLayout>
